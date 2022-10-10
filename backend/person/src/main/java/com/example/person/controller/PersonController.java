@@ -22,8 +22,8 @@ public class PersonController {
     }
 
     @GetMapping(path="/person{id}")
-    public Person findPersonById(@PathVariable("id") Long id) {
-        return personRepository.findById(id).get();
+    public ResponseEntity<?> findPersonById(@PathVariable("id") Long id) {
+        return ResponseEntity.accepted().body(personRepository.findById(id).get());
     }
 
     @GetMapping(path="/persons")
