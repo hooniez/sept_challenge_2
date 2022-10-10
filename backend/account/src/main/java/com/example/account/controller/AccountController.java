@@ -22,8 +22,9 @@ public class AccountController {
     }
 
     @GetMapping(path="/account{accountNumber}")
-    public Account findAccountById(@PathVariable("accountNumber") Long accountNumber) {
-        return accountRepository.findByAccountNumber(accountNumber).get();
+    public ResponseEntity<?> findAccountByAccountNumber(@PathVariable(
+            "accountNumber") Long accountNumber) {
+        return ResponseEntity.accepted().body(accountRepository.findByAccountNumber(accountNumber).get());
     }
 
     @GetMapping(path="/accounts")
