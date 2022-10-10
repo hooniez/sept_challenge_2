@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/account/account.iml" filepath="$PROJECT_DIR$/backend/account/account.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/challenge2.iml" filepath="$PROJECT_DIR$/.idea/challenge2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/person/person.iml" filepath="$PROJECT_DIR$/backend/person/person.iml" />
     </modules>
   </component>
 </project>
