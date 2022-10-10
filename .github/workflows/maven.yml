@@ -30,7 +30,7 @@ jobs:
       run: |
         mvn -B package --file backend/person/pom.xml
         mvn -B package --file backend/account/pom.xml
-    - name:Test with Maven
+    - name: Test with Maven
       run: |
         mvn -B -test --file backend/person/pom.xml
         mvn -B -test --file backend/account/pom.xml
