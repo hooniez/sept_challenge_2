@@ -16,9 +16,10 @@ import java.util.Currency;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+// TODO:
 public class Account {
-    @Id
 
+    @Id
     private Long accountNumber;
     private Long id;
     private String accountType;
