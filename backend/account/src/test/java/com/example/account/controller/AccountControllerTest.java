@@ -68,7 +68,7 @@ public class AccountControllerTest {
     }
 
     @Test
-    void updatePerson_returns202_IfUpdated() throws Exception {
+    void updateAccount_returns202_IfUpdated() throws Exception {
         Mockito.when(accountRepository.save(account_new)).thenReturn(account_new);
 
         MockHttpServletRequestBuilder mockRequest =
