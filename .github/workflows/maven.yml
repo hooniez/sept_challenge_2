@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Start containers
-        run: compose docker-compose -up -d
+        run: docker-compose -f backend/docker-compose.yml --exit-code-from -up -d
 
       
   
