@@ -39,9 +39,9 @@ jobs:
     
     steps:
       - name: Start containers
-        run: docker-compose -d up
+        run: docker-compose -f "backend/docker-compose.yml" -d up --build
         
       - name: Stop containers
-        run: docker-compose down
+        run: docker-compose -f "backend/docker-compose.yml" down
       
   
