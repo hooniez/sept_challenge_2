@@ -38,5 +38,9 @@ jobs:
       - name: Start containers
         run: docker-compose -f backend/docker-compose.yml up
 
+      - name: Stop containers
+        if: always()
+        run: docker-compose -f backend/docker-compose.yml down
+
       
   
